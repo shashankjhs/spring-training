@@ -1,0 +1,53 @@
+package com.walmart.api.coupon;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.walmart.api.coupon.dao.CouponDao;
+import com.walmart.api.coupon.model.Coupon;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext container = SpringApplication.run(Application.class, args);
+		CouponDao couponDao =container.getBean(CouponDao.class);
+		
+		// write switch case with four option 
+		//1. Create
+		//2. FindByid
+		//3. FindAll
+		//4. Update
+		//5. Delete
+		Coupon coupon=new Coupon();
+		coupon.setDiscount(100);
+		coupon.setCouponCode("CI_1");
+		coupon.setId(3);
+//		CouponDao couponDao =container.getBean("couponDaoImpl",CouponDao.class);
+		int case1 =-1;
+		switch (case1) {
+		case 1:
+			coupon.setDiscount(100);
+			coupon.setCouponCode("CI_1");
+			coupon.setId(3);	
+			couponDao.save(coupon);
+			
+		case 2:
+			couponDao.findById(1);
+		case 3:
+			couponDao.findAll();
+		case 4 :
+//			couponDao.deleteById("1");
+		case 5:
+			coupon.setDiscount(100);
+			coupon.setCouponCode("CI_1");
+			coupon.setId(3);	
+			couponDao.save(coupon);
+		}
+		
+		
+		
+	}
+
+}

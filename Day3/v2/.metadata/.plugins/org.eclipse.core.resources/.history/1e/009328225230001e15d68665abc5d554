@@ -1,0 +1,9 @@
+WebApplication is meant for human consumption
+WebServices is meant for application consupmtion
+The most common format of exchanging data is Json
+
+To Create a web Service in Spring we need to follow below steps :
+- Create as new class
+- Annotate this class with @RestController
+- Define methods in this class, Annotate respective methods with appropriate annotation
+- Add Spring Starter web dependency

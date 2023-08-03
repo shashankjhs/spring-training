@@ -1,0 +1,7 @@
+Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.walmart.api.coupon.dao.CouponDao' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:351)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:342)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1175)
+	at com.walmart.api.coupon.Application.main(Application.java:20)
+
+Above exception occurs when we are asking for specific bean which not present in container

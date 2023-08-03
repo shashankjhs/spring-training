@@ -1,0 +1,1 @@
+This Demonstration uses SpringCloud OpenFiegn with hardcoded url.

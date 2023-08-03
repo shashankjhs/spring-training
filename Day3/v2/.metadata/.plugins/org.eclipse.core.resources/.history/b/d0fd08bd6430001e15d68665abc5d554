@@ -1,0 +1,16 @@
+package com.walmart.api.order.rest.response;
+
+public class CouponResponse {
+	
+	private int disocunt;
+
+	public int getDisocunt() {
+		return disocunt;
+	}
+
+	public void setDisocunt(int disocunt) {
+		this.disocunt = disocunt;
+	}
+	
+
+}

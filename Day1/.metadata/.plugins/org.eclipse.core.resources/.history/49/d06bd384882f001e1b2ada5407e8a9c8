@@ -1,0 +1,10 @@
+package com.walmart.api.coupon.dao.impl;
+
+import com.walmart.api.coupon.model.Coupon;
+
+public class CouponJPADaoImpl {
+	public void saveCoupon(Coupon coupon) {
+		System.out.println("Insert coupon Object to DB using JPA");
+	}
+
+}

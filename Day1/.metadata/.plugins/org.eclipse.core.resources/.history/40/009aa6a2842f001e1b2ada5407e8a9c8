@@ -1,0 +1,9 @@
+package com.walmart.api.coupon.dao.impl;
+
+public class CouponDaoImpl {
+	
+	public void createCoupon(int id, String couponCode) {
+		// this method should talk to DB and insert record in the DB
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.walmart.api.coupon.rest.controller;
+
+@RestController
+public class CouponRestController {
+
+}

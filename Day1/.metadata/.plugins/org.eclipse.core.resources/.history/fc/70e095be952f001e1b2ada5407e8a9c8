@@ -1,0 +1,4 @@
+Spring dataJpa
+
+Add dependency
+Write appropriate properties in application.properties file

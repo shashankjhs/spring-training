@@ -1,0 +1,8 @@
+package com.walmart.api.coupon.model;
+
+public class Coupon {
+	private int id;
+	private String couponCode;
+	private int discount;
+
+}

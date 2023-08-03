@@ -1,0 +1,6 @@
+package com.walmart.api.coupon.dao;
+
+public interface CouponDao {
+	public saveCoupon() {}
+
+}
