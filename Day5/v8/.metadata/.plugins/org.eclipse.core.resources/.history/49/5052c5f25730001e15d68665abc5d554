@@ -1,0 +1,46 @@
+WebApplication is meant for human consumption
+WebServices is meant for application consupmtion
+The most common format of exchanging data is Json
+
+To Create a web Service in Spring we need to follow below steps :
+- Create as new class
+- Annotate this class with @RestController
+- Define methods in this class, Annotate respective methods with appropriate annotation
+- Add Spring Starter web dependency
+
+
+Monolithic Application:
+- it is traditional way of building Application
+- If all the funtionalities exist in a single code base then it is called monolithic Applicaiotn
+- It is a big single code application
+- It is deployed as a single unit
+
+Drawback of monolithic App:
+- It become too large in SIze with time
+- Even for a small change we need to redeploy the whole application
+- Scaling up and Scaling down is difficult with Monolithic
+- Difficult to adapt to new technology which is well suited for a particular functionality
+
+In order to overcome these problems, we can divide our applications into multiple small independent functionalities based on business. Such applications are called as MicroServices.
+Each micro service is developed and deployed independently on separate hardware.
+- One micro service must perform one single specific job
+- Scaling up and scaling down of a pecific micro service is possible 
+- Change in micro-service need change to that micro service alone and other modules or micro services are unaffected
+- We are free to choose appropriate technology for each micro services
+
+
+Important features of micro-service
+- Small, autonomous services(based on business functionalities) working together
+- Developed and deployed independently
+- They are cloud enabled
+
+
+Microservice communication
+- Microservice are deployed on separate hardware and it is very common that they want to communicate
+- it is typically done using REST call
+- Traditionaly REST call can be done by using RestTemplate class given by Spring
+- Making REST call Using RestTemplate is error prone, hence we wnat to make REST call easier
+- To solve this problem, SpringCloud offers Openfeign
+- Openfeign makes REST call Declarative
+- Steps to use Openfeign
+ 1. Add appropiate dependency
